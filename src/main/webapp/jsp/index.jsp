@@ -1,9 +1,7 @@
-
-
 <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
+      Import Google Icon Font
 
       <script  type = "text/javascript" src = "/initials/app/assets/css/materialize/js/materialize.min.js"></script> 
       <link rel = "stylesheet"  
@@ -22,4 +20,6 @@
     </div>
      
     </body>
-  </html>
+  </html> 
+  
+ 

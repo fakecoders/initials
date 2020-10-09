@@ -13,15 +13,28 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+	<!-- <listener>
+    <listener-class>com.initials.db.HibernateListener</listener-class>
+</listener>  -->
 
-
-    <servlet>
-        <servlet-name>comingsoon</servlet-name>
+    <!-- <servlet>
+        <servlet-name>demo</servlet-name>
         <servlet-class>com.initials.utils.Demo</servlet-class>
         <load-on-startup>0</load-on-startup>  
     </servlet>
     <servlet-mapping>
-        <servlet-name>comingsoon</servlet-name>
+        <servlet-name>demo</servlet-name>
         <url-pattern>/Demo</url-pattern>
     </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>SaveNoteServlet</servlet-name>
+        <servlet-class>com.initials.note.SaveNoteServlet</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SaveNoteServlet</servlet-name>
+        <url-pattern>/SaveNoteServlet</url-pattern>
+    </servlet-mapping> -->
+    
 </web-app>
