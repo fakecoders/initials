@@ -7,7 +7,6 @@
       <link rel = "stylesheet"  
          href = "https://fonts.googleapis.com/icon?family=Material+Icons">  
       <link rel = "stylesheet" href = "/initials/app/assets/css/materialize/css/materialize.min.css">  
-      <a href="jsp/hello.html">onclick</a>
 
     </head>
 
