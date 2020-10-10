@@ -24,17 +24,29 @@ public class UserRest {
 	@GetMapping("/getAllUsers")
 	@ResponseBody
 	public List<Users> getAllUsers(){
+		logger.info("logger info @class UserRest @method getAllUsers");
+		try {
 		List<Users> userList=userService.getAllUser();
+		logger.info("user{}",userList);
 		return userList;
+		}
+		catch(Exception e) {
+			logger.error("error  catch block{} @class UserRest @method getAllUsers");
+			return null;
+		}
+		
 	}
 	
 	@PostMapping("/create")
 	public Users create(@RequestBody Users user){
-		logger.info("hello");
-		System.out.println("user"+user);
-		Users userObj=userService.create(user);
-		System.out.println("user:::::::::::"+user);
-		return user;
+		logger.info("logger info @class UserRest @method create user{}",user);
+		try {
+			Users userObj=userService.create(user);
+			return user;
+		}catch (Exception e) {
+			logger.error("error  catch block{} @class UserRest @method create");
+			return null;
+		}
 	}
 	
 	@PostMapping("/user/{name}")
